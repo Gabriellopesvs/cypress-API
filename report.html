@@ -1,0 +1,76 @@
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>api-cypress-test</title>
+        <style>
+          body {
+            background-color: #333;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+          }
+
+          .report-container {
+            position: relative;
+            padding: 3px;
+            margin: 0;
+          }
+
+          .background-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+            border-radius: 10px;
+            z-index: -1;
+          }
+
+          .title-container {
+            position: relative;
+            z-index: 2;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Espaço entre os elementos */
+          }
+
+          .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+          }
+
+          .test-summary {
+            display: flex;
+          }
+
+          .test-summary-item {
+            margin-left: 10px;
+          }
+        </style>
+      </head>
+      <body>
+
+        <div class="report-container">
+          <div class="background-container"></div>
+          <div class="title-container">
+            <div class="title">api-cypress-test</div>
+            <div class="test-summary">
+              <div class="test-summary-item">6 ✅</div>
+              <div class="test-summary-item">0 ❌</div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+      </html>
+    

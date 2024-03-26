@@ -1,0 +1,35 @@
+{
+  "Test Complete": {
+    "prefix": "full_test",
+    "body": [
+      "import { action } from '../../support/commands.js';",
+      "",
+      "describe('TC001 - Utilize o bloco describe para descrever o cenário de teste', () => {",
+      "",
+      "before(() => {",
+      "cy.setupTest();",
+      "});",
+      "",
+      "  it('UC001 - Utilize o bloco it para detalhar a ação específica', () => {",
+      "",
+      "action({ atr: 'atributo', text: 'action page', screenshot: false })",
+      "// Após o action, utilize .type(), .click(), .select()",
+      "",
+      "  });",
+      "});",
+      "",
+      "export let element = {",
+      "// Armazenar os valores dos elementos EX: page: 'atributo'",
+      "};"
+    ],
+    "description": "test complete"
+  },
+
+  "Function Action": {
+    "prefix": "action",
+    "body": [
+      "action({ atr: 'atributo$1', text: 'action page', screenshot: false })"
+    ],
+    "description": "function action"
+  }
+}
